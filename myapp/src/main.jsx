@@ -9,9 +9,11 @@ import { DisplayDataWithAPI } from './DisplayDataWithAPI.jsx'
 import BirthDateDisplay from './BirthDateDisplay.jsx'
 import APIData from './APIData.jsx'
 import { Login } from './Login.jsx'
+import { DisplayDataWithAxios } from './DisplayDataWithAxios.jsx'
+import { LoginWithFormik } from './LoginWithFormik.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Login />
+    <LoginWithFormik />
   </React.StrictMode>,
 )
