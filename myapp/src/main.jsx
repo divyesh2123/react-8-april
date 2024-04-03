@@ -11,9 +11,10 @@ import APIData from './APIData.jsx'
 import { Login } from './Login.jsx'
 import { DisplayDataWithAxios } from './DisplayDataWithAxios.jsx'
 import { LoginWithFormik } from './LoginWithFormik.jsx'
+import { MyForm } from './MyForm.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <LoginWithFormik />
+    <MyForm />
   </React.StrictMode>,
 )
