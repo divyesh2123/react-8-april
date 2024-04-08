@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import './index.css'
+
 
 import { Counter } from './Counter.jsx'
 import { DisplayData } from './DisplayData.jsx'
@@ -12,9 +12,14 @@ import { Login } from './Login.jsx'
 import { DisplayDataWithAxios } from './DisplayDataWithAxios.jsx'
 import { LoginWithFormik } from './LoginWithFormik.jsx'
 import { MyForm } from './MyForm.jsx'
+import { MyFormWithoutYup } from './MyFormWithoutYup.jsx'
+import { FormikWithMUI } from './FormikWithMUI.jsx'
+import ExampleWithSelect from './ExampleWithSelect.jsx'
+import { EmployeeDisplay } from './EmployeeDisplay.jsx'
+import DisplayDataWithAPIProps from './DisplayDataWithAPIProps.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <MyForm />
+    <DisplayDataWithAPIProps />
   </React.StrictMode>,
 )
