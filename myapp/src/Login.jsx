@@ -1,10 +1,15 @@
 import React, { useState } from 'react'
+import axios from 'axios'
+import {useNavigate}  from 'react-router-dom'
 
 export const Login = () => {
 
+    const n = useNavigate();
+
+    
     const [data,setData] = useState({
-        Email : "",
-        Password : ""
+        email : "",
+        password : ""
     })
 
     const handleInput = (e)=>{
@@ -14,6 +19,15 @@ export const Login = () => {
 
    
     const handleSubmit = (e)=>{
+
+        
+        axios.post("https://real-pear-fly-kilt.cyclic.app/accounts/authenticate",data)
+        .then(y=>{
+            localStorage.setItem("token",JSON.stringify(y.data))
+        }).then(y=>{
+
+            n("/account");
+        })
 
         e.preventDefault();
 
@@ -33,7 +47,7 @@ export const Login = () => {
             Password
         </label>
 
-        <input type='password' name='Password' onChange={handleInput} />
+        <input type='password' name='password' onChange={handleInput} />
     
         <input type='submit' value="login"/>
     </form>

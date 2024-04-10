@@ -17,9 +17,16 @@ import { FormikWithMUI } from './FormikWithMUI.jsx'
 import ExampleWithSelect from './ExampleWithSelect.jsx'
 import { EmployeeDisplay } from './EmployeeDisplay.jsx'
 import DisplayDataWithAPIProps from './DisplayDataWithAPIProps.jsx'
-
+import {BrowserRouter} from 'react-router-dom'
+import ApplicationRoute from './ApplicationRoute.jsx'
+import Product from './Product.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <DisplayDataWithAPIProps />
+    <BrowserRouter>
+
+    <Product/>
+    
+    </BrowserRouter>
+  
   </React.StrictMode>,
 )
