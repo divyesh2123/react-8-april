@@ -20,11 +20,12 @@ import DisplayDataWithAPIProps from './DisplayDataWithAPIProps.jsx'
 import {BrowserRouter} from 'react-router-dom'
 import ApplicationRoute from './ApplicationRoute.jsx'
 import Product from './Product.jsx'
+import Parent from './Parent.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
 
-    <Product/>
+    <Parent/>
     
     </BrowserRouter>
   
